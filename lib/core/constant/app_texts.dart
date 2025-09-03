@@ -1,14 +1,16 @@
 class AppTexts {
-  static const String onBoardingTitle1 = 'Welcome to Trendify Store';
-  static const String onBoardingTitle2 = 'Shop Everything You Love !';
-  static const String onBoardingTitle3 = 'Fast and Reliable Delivery !';
+  // OnBoarding Titles
+  static const String onBoardingTitle1 = 'Welcome to El Hou Barber Shop';
+  static const String onBoardingTitle2 = 'Style That Fits You Best!';
+  static const String onBoardingTitle3 = 'Sharp Cuts, Fresh Looks!';
 
+  // OnBoarding SubTitles
   static const String onBoardingSubTitle1 =
-      'Discover a seamless shopping experience where convenience meets style your one stop destination for effortless and enjoyable online shopping.';
+      'Step into a world of grooming excellence where precision meets style your go to destination for the perfect haircut and beard trim.';
   static const String onBoardingSubTitle2 =
-      'Discover top-quality products at unbeatable prices all wrapped in a smooth, secure, and enjoyable shopping experience.';
+      'Experience top-quality barbering with modern styles, classic cuts, and care tailored just for you.';
   static const String onBoardingSubTitle3 =
-      'Get your favorite items delivered straight to your doorstep anytime, anywhere, with speed and reliability you can count on.';
+      'Walk out with confidence  fresh cuts, sharp lines, and a barber service you can always rely on.';
 
   // Home Screen
   static const String goodMorning = 'Good Morning';

@@ -10,7 +10,7 @@ class AnimatedLoadingSpinner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SpinKitSpinningLines(
-        color: AppColors.primary,
+        color: AppColors.black,
         size: 70.0,
         lineWidth: 3.0,
       ),

@@ -2,12 +2,10 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import '../../core/constant/app_colors.dart';
-import '../../view/screen/onboarding_view.dart';
+import '../../view/screen/application_view.dart';
 import '../helper/function_helpers.dart';
-import 'widgets/animated_app_name.dart';
 import 'widgets/animated_logo.dart';
 import 'widgets/animated_spinner.dart';
-import 'widgets/animated_tagline.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -20,7 +18,7 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Colors.transparent,
       splashTransition: SplashTransition.fadeTransition,
       pageTransitionType: PageTransitionType.fade,
-      nextScreen: OnboardingView(),
+      nextScreen: ApplicationView(),
     );
   }
 
@@ -31,7 +29,7 @@ class SplashScreen extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            color: dark ? AppColors.black : AppColors.white,
+            color: dark ? AppColors.black : Color(0XFFFC9F1D),
           ),
         ),
         Center(
@@ -39,11 +37,7 @@ class SplashScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               AnimatedLogo(),
-              const SizedBox(height: 20),
-              AnimatedAppName(),
-              const SizedBox(height: 15),
-              AnimatedTagline(),
-              const SizedBox(height: 100),
+              const SizedBox(height: 150),
               AnimatedLoadingSpinner(),
             ],
           ),

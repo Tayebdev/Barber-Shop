@@ -70,17 +70,17 @@ class _AnimatedLogoState extends State<AnimatedLogo>
               );
             },
             child: Container(
-              width: 120,
-              height: 120,
+              width: 200,
+              height: 200,
               decoration: BoxDecoration(
                 color:  Colors.transparent,
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(70),
                 boxShadow: [
                   BoxShadow(
                     blurRadius: 30,
                     // ignore: deprecated_member_use
-                    color: AppColors.black.withOpacity(0.2),
-                    offset: const Offset(0, 20),
+                    color: AppColors.black.withOpacity(0.15),
+                    offset: const Offset(0, 10),
                   ),
                 ],
               ),

@@ -15,7 +15,8 @@ class AppImages {
   static const String product = 'assets/images/product.png';
   static const String brand = "assets/images/bata.png";
   static const String user = 'assets/images/user.png';
-  static const String logo = 'assets/logo/logo_recolored_new.png';
+  static const String logo = 'assets/logo/logo_new.png';
+  static const String screen="assets/images/background.jpg";
   // animations
   static const String pencilAnimation = 'assets/animations/pencil_drawing.json';
   static const String cartEmptyAnimation = 'assets/animations/cart_empty.json';
