@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/constant/app_colors.dart';
+import '../../helper/function_helpers.dart';
 import 'shopping_bags_logo.dart';
 
 class AnimatedLogo extends StatefulWidget {
@@ -54,6 +55,7 @@ class _AnimatedLogoState extends State<AnimatedLogo>
 
   @override
   Widget build(BuildContext context) {
+    final dark = AppHelperFunctions.isDarkMode(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -73,13 +75,17 @@ class _AnimatedLogoState extends State<AnimatedLogo>
               width: 200,
               height: 200,
               decoration: BoxDecoration(
-                color:  Colors.transparent,
+                color: Colors.transparent,
                 borderRadius: BorderRadius.circular(70),
                 boxShadow: [
                   BoxShadow(
                     blurRadius: 30,
                     // ignore: deprecated_member_use
-                    color: AppColors.black.withOpacity(0.15),
+                    color: dark
+                        // ignore: deprecated_member_use
+                        ? AppColors.primary.withOpacity(0.15)
+                        // ignore: deprecated_member_use
+                        : AppColors.black.withOpacity(0.15),
                     offset: const Offset(0, 10),
                   ),
                 ],

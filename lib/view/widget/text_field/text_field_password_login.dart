@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
+
+import '../../../controller/auth/login_controller.dart';
+import '../../../core/constant/app_colors.dart';
+import '../../../core/constant/app_texts.dart';
+import '../../../core/function/app_validator.dart';
+
+// ignore: must_be_immutable
+class AppTextFieldPasswordLogin extends StatelessWidget {
+   const AppTextFieldPasswordLogin({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GetBuilder<LoginControllerImp>(
+      builder: (controller) => TextFormField(
+        validator: (value) => AppValidator.validatePassword(value),
+        controller: controller.password,
+        obscureText: controller.obscureText!,
+        cursorColor: AppColors.primary,
+        decoration: InputDecoration(
+          labelText: AppTexts.password,
+          prefixIcon: const Icon(Iconsax.password_check),
+          suffixIcon: IconButton(
+            icon: Icon(
+              controller.obscureText! ? Icons.visibility_off : Icons.visibility,
+            ),
+            onPressed: controller.toggleObscureText,
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -15,9 +15,9 @@ class AppTexts {
   // Home Screen
   static const String goodMorning = 'Good Morning';
   // Login Screen
-  static const String loginTitle = 'Shop Smarter';
+  static const String loginTitle = 'Groom with Style';
   static const String loginSubTitle =
-      'Log in to Access Exclusive Deals and Simplify Your Shopping Experience';
+      'Log in to book your appointment and enjoy the best cuts and grooming tailored just for you.';
   static const String email = 'Email';
   static const String password = 'Password';
   static const String confirmPassword = 'Confirm Password';
@@ -77,7 +77,7 @@ class AppTexts {
 
   static const String homeAppBarTitle = 'Good Morning';
   static const String homeAppBarSubTitle = 'Unknown Pro';
-  static const String searchBarTitle = 'Search in Store';
+  static const String searchBarTitle = 'Search in Barber store';
   static const String popularCategories = 'Popular Categories';
   static const String popularProducts = 'Popular Products';
   static const String viewAll = "View all";

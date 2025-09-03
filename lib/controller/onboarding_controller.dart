@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../core/services/app_service.dart';
+import '../core/constant/app_routes.dart';
 import '../data/static/static.dart';
 
 abstract class OnboardingController extends GetxController {
@@ -28,10 +28,10 @@ class OnboardingControllerImp extends OnboardingController {
 
   @override
   nextPage() {
-    AppServices? appServices = Get.find<AppServices>();
+    //AppServices? appServices = Get.find<AppServices>();
     if (currentPage.value == onboardingList.length - 1) {
-      appServices.sharedPref.setBool("visited", true);
-      //return Get.offAllNamed(AppRoutes.login);
+      //appServices.sharedPref.setBool("visited", true);
+      return Get.offAllNamed(AppRoutes.login);
     }
     currentPage.value++;
     pageController.jumpToPage(currentPage.value);
