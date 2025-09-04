@@ -16,6 +16,7 @@ class AppRoundedImage extends StatelessWidget {
     this.onPressed,
     this.borderRadius = AppSizes.md,
   });
+
   final double? width, height;
   final String imageUrl;
   final bool applayImageRadius;
@@ -29,12 +30,12 @@ class AppRoundedImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: sized_box_for_whitespace
     return GestureDetector(
       onTap: onPressed,
       child: Container(
         width: width,
         height: height,
+        padding: padding,
         decoration: BoxDecoration(
           color: backgroundColor,
           border: border,
@@ -47,8 +48,8 @@ class AppRoundedImage extends StatelessWidget {
           child: Image(
             image: isNetworkImage
                 ? NetworkImage(imageUrl)
-                : AssetImage(imageUrl),
-            fit: fit,
+                : AssetImage(imageUrl) as ImageProvider,
+            fit: BoxFit.cover,
           ),
         ),
       ),

@@ -70,7 +70,7 @@ class AppHeaderBarbers extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: AppSizes.spaceBtwSections),
+        SizedBox(height: AppSizes.spaceBtwSections/2),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

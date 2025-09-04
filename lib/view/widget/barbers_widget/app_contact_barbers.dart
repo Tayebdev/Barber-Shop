@@ -16,6 +16,7 @@ class AppContactBarbers extends StatelessWidget {
     return Column(
       children: [
         AppCircularIcon(
+          // ignore: deprecated_member_use
           backgroundColor: AppColors.primary.withOpacity(0.4),
           height: 50,
           width: 50,
