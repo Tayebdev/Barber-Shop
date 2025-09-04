@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/constant/app_colors.dart';
 import '../../../core/constant/app_sizes.dart';
-import '../../../utils/helper/function_helpers.dart';
 import '../circular_contrainer/circular_container.dart';
 
 // ignore: must_be_immutable
@@ -24,7 +23,6 @@ class AppVerticalImageText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = AppHelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
       child: Column(

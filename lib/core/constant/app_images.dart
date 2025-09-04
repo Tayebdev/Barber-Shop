@@ -12,11 +12,11 @@ class AppImages {
   static const String docerAnimation='assets/animations/animation-of-docer.json';
   // logo
   static const String sport = 'assets/images/sports.png';
-  static const String product = 'assets/images/product.png';
+  static const String product = 'assets/images/client-doing-hair-cut-barber-shop-salon.jpg';
   static const String brand = "assets/images/bata.png";
   static const String user = 'assets/images/user.png';
   static const String logo = 'assets/logo/logo_new.png';
-  static const String logoDark = 'assets/logo/dark_logo.png';
+  static const String logoDark = 'assets/logo/logo_barber.png';
   static const String screen="assets/images/background.jpg";
   // animations
   static const String pencilAnimation = 'assets/animations/pencil_drawing.json';
