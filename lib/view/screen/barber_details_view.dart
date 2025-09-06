@@ -1,11 +1,13 @@
+import 'package:el_hou/core/constant/app_routes.dart';
 import 'package:flutter/material.dart';
-import '../../../core/constant/app_sizes.dart';
-import '../../widget/barbers_widget/app_barber_haircut.dart';
-import '../../widget/barbers_widget/app_barber_work.dart';
-import '../../widget/barbers_widget/app_barbers_images_slider.dart';
-import '../../widget/barbers_widget/app_header_barbers.dart';
-import '../../widget/bottom_navigation_bar/app_bottom_navigation.dart';
-import '../../widget/map/app_map_barber.dart';
+import 'package:get/get.dart';
+import '../../core/constant/app_sizes.dart';
+import '../widget/barbers_widget/app_barber_haircut.dart';
+import '../widget/barbers_widget/app_barber_work.dart';
+import '../widget/barbers_widget/app_barbers_images_slider.dart';
+import '../widget/barbers_widget/app_header_barbers.dart';
+import '../widget/bottom_navigation_bar/app_bottom_navigation.dart';
+import '../widget/map/app_map_barber.dart';
 
 class BarbersDetailsView extends StatelessWidget {
   const BarbersDetailsView({super.key});
@@ -13,7 +15,9 @@ class BarbersDetailsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const AppBottomNavigation(),
+      bottomNavigationBar: AppBottomNavigation(
+        onPressed: () => Get.toNamed(AppRoutes.booking),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -34,7 +38,7 @@ class BarbersDetailsView extends StatelessWidget {
                   const SizedBox(height: AppSizes.spaceBtwSections / 2),
                   const AppBarberHaircut(),
                   const SizedBox(height: AppSizes.spaceBtwSections / 2),
-                  AppMapBarber()
+                  AppMapBarber(),
                 ],
               ),
             ),

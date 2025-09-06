@@ -16,7 +16,7 @@ class AppBarberHaircut extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Haircut", style: Theme.of(context).textTheme.headlineSmall),
+        Text("Our Specialist", style: Theme.of(context).textTheme.headlineSmall),
         SizedBox(height: AppSizes.spaceBtwSections / 4),
         SizedBox(
           height: 80,

@@ -1,10 +1,16 @@
+import 'package:el_hou/core/constant/app_images.dart';
+import 'package:el_hou/core/constant/app_routes.dart';
+import 'package:el_hou/core/constant/app_sizes.dart';
 import 'package:el_hou/view/screen/home_view.dart';
+import 'package:el_hou/view/screen/store_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'core/constant/app_colors.dart';
 import 'utils/helper/function_helpers.dart';
+import 'view/screen/profile_view.dart';
+
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
 
@@ -14,6 +20,18 @@ class NavigationMenu extends StatelessWidget {
     bool dark = AppHelperFunctions.isDarkMode(context);
 
     return Scaffold(
+      floatingActionButton: GestureDetector(
+        onTap: () => Get.toNamed(AppRoutes.myBooking),
+        child: Container(
+          height: 50,
+          width: 50,
+          decoration: BoxDecoration(
+            color: AppColors.primary,
+            borderRadius: BorderRadius.circular(AppSizes.cardRadiusLg),
+          ),
+          child: Image.asset(AppImages.logo),
+        ),
+      ),
       body: Obx(() => controller.screens[controller.selectedIndex.value]),
       bottomNavigationBar: Obx(
         () => NavigationBarTheme(
@@ -110,8 +128,8 @@ class NavigationController extends GetxController {
 
   List<Widget> screens = [
     HomeView(),
-    Center(child: Text("store"),),
-    Center(child: Text("love"),),
-    Center(child: Text("setting"),),
+    StoreView(),
+    Center(child: Text("love")),
+    ProfileView(),
   ];
 }

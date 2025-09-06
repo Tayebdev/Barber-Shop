@@ -5,7 +5,8 @@ import '../../../core/constant/app_sizes.dart';
 import '../../../utils/helper/function_helpers.dart';
 
 class AppBottomNavigation extends StatelessWidget {
-  const AppBottomNavigation({super.key});
+  AppBottomNavigation({super.key, required this.onPressed});
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -16,14 +17,14 @@ class AppBottomNavigation extends StatelessWidget {
         vertical: AppSizes.defaultSpace / 2,
       ),
       decoration: BoxDecoration(
-        color: dark ? AppColors.darkerGrey : AppColors.grey,
+        color: dark ? AppColors.dark : AppColors.grey,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(AppSizes.cardRadiusLg),
           topRight: Radius.circular(AppSizes.cardRadiusLg),
         ),
       ),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           padding: EdgeInsets.all(AppSizes.md),
           backgroundColor: AppColors.primary,
