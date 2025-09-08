@@ -1,7 +1,6 @@
+import 'package:el_hou/data/static/static.dart';
 import 'package:flutter/material.dart';
-
 import '../../../core/constant/app_colors.dart';
-import '../../../core/constant/app_images.dart';
 import '../../../core/constant/app_sizes.dart';
 import '../../../utils/helper/function_helpers.dart';
 import '../image_widget/app_rounded_image.dart';
@@ -26,8 +25,9 @@ class AppBarberHaircut extends StatelessWidget {
             physics: AlwaysScrollableScrollPhysics(),
             itemBuilder: (context, index) {
               bool isSelected = index == selectedIndex;
+              final category = categoryList[index];
               return AppRoundedImage(
-                imageUrl: AppImages.product,
+                imageUrl: category["image"],
                 width: 80,
                 backgroundColor: dark ? AppColors.dark : AppColors.light,
                 border: Border.all(
@@ -38,7 +38,7 @@ class AppBarberHaircut extends StatelessWidget {
             },
             separatorBuilder: (context, index) =>
                 SizedBox(width: AppSizes.spaceBtwItems),
-            itemCount: 7,
+            itemCount: categoryList.length,
           ),
         ),
       ],

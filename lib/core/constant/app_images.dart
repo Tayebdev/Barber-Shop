@@ -4,20 +4,46 @@ class AppImages {
   static const String onboarding2Animation = 'assets/animations/cart.json';
   static const String onboarding3Animation = 'assets/animations/delivery.json';
   // animation loading
-  static const String loadingAnimation = 'assets/animations/Loadinganimationblue.json';
-  static const String checkInternet='assets/animations/NoInternetConnection.json';
+  static const String loadingAnimation =
+      'assets/animations/Loadinganimationblue.json';
+  static const String checkInternet =
+      'assets/animations/NoInternetConnection.json';
   static const String sentEmailAnimation = 'assets/animations/EmailSent.json';
   static const String serverFailure = 'assets/animations/CloudServer.json';
   static const String failureAnimation = 'assets/animations/SadEmptyBox.json';
-  static const String docerAnimation='assets/animations/animation-of-docer.json';
+  static const String docerAnimation =
+      'assets/animations/animation-of-docer.json';
   // logo
   static const String sport = 'assets/images/sports.png';
-  static const String product = 'assets/images/client-doing-hair-cut-barber-shop-salon.jpg';
+  static const String product = 'assets/images/el-hou.jpg';
+  static const String test = 'assets/images/123.jpg';
   static const String brand = "assets/images/bata.png";
   static const String user = 'assets/images/user.png';
   static const String logo = 'assets/logo/logo_new.png';
   static const String logoDark = 'assets/logo/logo_barber.png';
-  static const String screen="assets/images/background.jpg";
+  static const String screen = "assets/images/background.jpg";
+
+  //category
+  static const String beardTrimming =
+      "assets/icons/category/beard-trimming.png";
+  static const String blackMask = "assets/icons/category/Black-Mask.png";
+  static const String facialTreatment =
+      "assets/icons/category/Facial-Treatment.png";
+  static const String hairColoring = "assets/icons/category/Hair-Coloring.png";
+  static const String hairExtensions =
+      "assets/icons/category/Hair-Extensions.png";
+  static const String hairStyling = "assets/icons/category/Hair-Styling.png";
+  static const String haircut = "assets/icons/category/haircut.png";
+  static const String keratinTreatment =
+      "assets/icons/category/Keratin-Treatment.png";
+  static const String kidsHaircut = "assets/icons/category/Kids-Haircut.png";
+  static const String massageChair = "assets/icons/category/Massage-Chair.png";
+  static const String premiumPackage =
+      "assets/icons/category/Premium-Package-(Haircut+Beard+Facial).png";
+  static const String scalpCare = "assets/icons/category/Scalp-Care.png";
+  static const String waxing =
+      "assets/icons/category/Waxing-(Eyebrow,Nose,Ear).png";
+
   // animations
   static const String pencilAnimation = 'assets/animations/pencil_drawing.json';
   static const String cartEmptyAnimation = 'assets/animations/cart_empty.json';
@@ -52,5 +78,5 @@ class AppImages {
   static const String successfulPaymentIcon =
       "assets/icons/payment_methods/successful_payment_icon.png";
   static const String codIcon = "assets/icons/payment_methods/cod.png";
-  static const String payment='assets/animations/OnlinePayment.json';
+  static const String payment = 'assets/animations/OnlinePayment.json';
 }

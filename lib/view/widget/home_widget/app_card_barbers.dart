@@ -39,7 +39,7 @@ class AppCardBarbers extends StatelessWidget {
                   width: 90,
                   height: 90,
                   child: AppRoundedImage(
-                    imageUrl: AppImages.logo,
+                    imageUrl: AppImages.test,
                     applayImageRadius: true,
                   ),
                 ),

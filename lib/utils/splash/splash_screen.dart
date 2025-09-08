@@ -29,7 +29,7 @@ class SplashScreen extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            color: dark ? AppColors.black : Color(0XFFFC9F1D),
+            color: dark ? AppColors.black : AppColors.primary,
           ),
         ),
         Center(

@@ -47,7 +47,7 @@ class HomeView extends StatelessWidget {
               ),
               child: PromoWidget(),
             ),
-            AppSerivceHome(),
+            AppServiceHome(),
             AppBarbers()
           ],
         ),

@@ -19,7 +19,7 @@ class AppProductImageSlider extends StatelessWidget {
         child: Stack(
           children: [
             SizedBox(
-              height: 280,
+              height: 350,
               width: double.infinity,
               child: Image.asset(AppImages.product,fit: BoxFit.cover,),
             ),

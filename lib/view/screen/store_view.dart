@@ -28,7 +28,7 @@ class StoreView extends StatelessWidget {
           padding: AppPadding.screenPadding,
           child: GridLayout(
             itemCount: 10,
-            mainAxisCount: 210.5,
+            mainAxisCount: 320.5,
             itemBuilder: (context, index) => ProductCartVertical(),
           ),
         ),

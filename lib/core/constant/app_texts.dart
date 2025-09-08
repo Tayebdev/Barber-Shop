@@ -117,4 +117,59 @@ class AppTexts {
   static const String payment = "Payment Success!";
   static const String subTitlePayment =
       'Thank you for shopping with Trendify! Your payment was successful, and your order is now being processed. We’ll notify you in the app when your package is on its way. Happy shopping!';
+  static const String haircut_en = "Haircut";
+  static const String haircut_ar = "قص الشعر";
+  static const String haircut_fr = "Coupe de cheveux";
+
+  static const String beard_trim_en = "Beard Trim";
+  static const String beard_trim_ar = "تقليم اللحية";
+  static const String beard_trim_fr = "Taille de barbe";
+
+  static const String hair_color_en = "Hair Coloring";
+  static const String hair_color_ar = "صبغ الشعر";
+  static const String hair_color_fr = "Coloration des cheveux";
+
+
+  static const String facial_en = "Facial Treatment";
+  static const String facial_ar = "علاج الوجه";
+  static const String facial_fr = "Soin du visage";
+
+  static const String black_mask_en = "Black Mask";
+  static const String black_mask_ar = "قناع أسود";
+  static const String black_mask_fr = "Masque noir";
+
+  static const String kids_haircut_en = "Kids Haircut";
+  static const String kids_haircut_ar = "قص شعر للأطفال";
+  static const String kids_haircut_fr = "Coupe de cheveux pour enfants";
+
+  static const String styling_en = "Hair Styling";
+  static const String styling_ar = "تسريح الشعر";
+  static const String styling_fr = "Coiffure";
+
+  static const String keratin_en = "Keratin Treatment";
+  static const String keratin_ar = "علاج الكيراتين";
+  static const String keratin_fr = "Traitement à la kératine";
+
+  static const String scalp_care_en = "Scalp Care";
+  static const String scalp_care_ar = "عناية بفروة الرأس";
+  static const String scalp_care_fr = "Soin du cuir chevelu";
+
+  static const String waxing_en = "Waxing (Eyebrow, Nose, Ear)";
+  static const String waxing_ar = "إزالة الشعر بالشمع (الحواجب، الأنف، الأذن)";
+  static const String waxing_fr =
+      "Épilation à la cire (sourcils, nez, oreilles)";
+
+  static const String hair_extensions_en = "Hair Extensions";
+  static const String hair_extensions_ar = "إضافات الشعر";
+  static const String hair_extensions_fr = "Extensions de cheveux";
+
+  static const String massage_chair_en = "Massage Chair";
+  static const String massage_chair_ar = "كرسي التدليك";
+  static const String massage_chair_fr = "Fauteuil de massage";
+
+  static const String package_premium_en =
+      "Premium Package (Haircut + Beard + Facial)";
+  static const String package_premium_ar = "(الباقة المميزة (قص + لحية + الشعر";
+  static const String package_premium_fr =
+      "Forfait Premium (Coupe + Barbe + Soin visage)";
 }

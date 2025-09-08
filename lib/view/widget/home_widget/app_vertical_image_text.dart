@@ -31,7 +31,7 @@ class AppVerticalImageText extends StatelessWidget {
             height: 56,
             width: 56,
             padding: EdgeInsets.all(AppSizes.sm),
-            backgroundColor: AppColors.primary.withValues(alpha: 0.6),
+            backgroundColor: AppColors.primary.withValues(alpha: 0.3),
             child: isAsset
                 ? Image.asset(image!, fit: BoxFit.cover)
                 : Image.network(image!, fit: BoxFit.cover),
