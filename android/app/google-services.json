@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "827592890672",
+    "project_id": "barber-shop-b5e54",
+    "storage_bucket": "barber-shop-b5e54.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827592890672:android:0e0e4da570e25cb25610f5",
+        "android_client_info": {
+          "package_name": "com.example.el_hou"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9SC0qjvk-8nUl_-S6Bwly3V_JI3kt43w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

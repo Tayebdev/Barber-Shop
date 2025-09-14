@@ -1,0 +1,25 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "barber-shop-b5e54",
+          "appId": "1:827592890672:android:0e0e4da570e25cb25610f5",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "barber-shop-b5e54",
+          "configurations": {
+            "android": "1:827592890672:android:0e0e4da570e25cb25610f5",
+            "ios": "1:827592890672:ios:558e49d0ac4485935610f5",
+            "macos": "1:827592890672:ios:558e49d0ac4485935610f5",
+            "web": "1:827592890672:web:89dbee60171af3ec5610f5",
+            "windows": "1:827592890672:web:e7131d30535293db5610f5"
+          }
+        }
+      }
+    }
+  }
+}
