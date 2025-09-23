@@ -1,8 +1,8 @@
 class AppImages {
   // onboarding animations
-  static const String onboarding1Animation = 'assets/animations/welcome.json';
-  static const String onboarding2Animation = 'assets/animations/cart.json';
-  static const String onboarding3Animation = 'assets/animations/delivery.json';
+  static const String onboarding1Animation = 'assets/images/test.jpg';
+  static const String onboarding2Animation = 'assets/images/test2.jpg';
+  static const String onboarding3Animation = 'assets/images/test3.jpg';
   // animation loading
   static const String loadingAnimation =
       'assets/animations/Loadinganimationblue.json';
@@ -20,7 +20,7 @@ class AppImages {
   static const String brand = "assets/images/bata.png";
   static const String user = 'assets/images/user.png';
   static const String logo = 'assets/logo/logo_new.png';
-  static const String logoDark = 'assets/logo/logo_barber.png';
+  static const String logoDark = 'assets/logo/new_logo_barber-removebg-preview.png';
   static const String screen = "assets/images/background.jpg";
 
   //category

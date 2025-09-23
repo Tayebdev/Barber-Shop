@@ -6,16 +6,20 @@ import 'package:iconsax/iconsax.dart';
 import '../../../core/constant/app_colors.dart';
 import '../../../core/constant/app_images.dart';
 import '../../../core/constant/app_sizes.dart';
+import '../../../data/static/static.dart';
 import '../../../utils/helper/function_helpers.dart';
 import '../image_widget/app_rounded_image.dart';
 import '../rounded_container/app_rounded_container.dart';
 
+// ignore: must_be_immutable
 class AppCardBarbers extends StatelessWidget {
-  const AppCardBarbers({super.key});
+  int? index;
+  AppCardBarbers({super.key, this.index});
 
   @override
   Widget build(BuildContext context) {
     final dark = AppHelperFunctions.isDarkMode(context);
+    final service = barberList[index!];
     return GestureDetector(
       onTap: () => Get.toNamed(AppRoutes.barbers),
       child: Container(
@@ -51,7 +55,7 @@ class AppCardBarbers extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Boulekzazel Tayeb",
+                  service["name"],
                   style: Theme.of(context).textTheme.bodyLarge,
                 ),
                 Row(
@@ -63,7 +67,7 @@ class AppCardBarbers extends StatelessWidget {
                     ),
                     SizedBox(width: 5),
                     Text(
-                      "8:00h-19:00",
+                      "${service["open"]} ${service["open"]}",
                       style: Theme.of(context).textTheme.labelMedium,
                     ),
                   ],
@@ -77,7 +81,7 @@ class AppCardBarbers extends StatelessWidget {
                     ),
                     SizedBox(width: 5),
                     Text(
-                      "1.2 Km",
+                      service["distance"],
                       style: Theme.of(context).textTheme.labelMedium,
                     ),
                     SizedBox(width: 10),
@@ -87,12 +91,15 @@ class AppCardBarbers extends StatelessWidget {
                       size: AppSizes.iconSm,
                     ),
                     SizedBox(width: 5),
-                    Text("4.8", style: Theme.of(context).textTheme.labelMedium),
+                    Text(
+                      service["rating"],
+                      style: Theme.of(context).textTheme.labelMedium,
+                    ),
                   ],
                 ),
               ],
             ),
-            SizedBox(width: 65),
+            SizedBox(width: 45),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Icon(Iconsax.heart, color: AppColors.primary),

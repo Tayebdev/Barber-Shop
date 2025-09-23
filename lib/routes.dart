@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import 'core/constant/app_routes.dart';
 import 'navigation_menu.dart';
 import 'view/screen/barber_details_view.dart';
+import 'view/screen/barber_price_view.dart';
 import 'view/screen/my_booking_view.dart';
 
 List<GetPage<dynamic>>? getPages = [
@@ -18,4 +19,5 @@ List<GetPage<dynamic>>? getPages = [
   GetPage(name: AppRoutes.barbers, page: () => BarbersDetailsView()),
   GetPage(name: AppRoutes.booking, page: () => BookingView()),
   GetPage(name: AppRoutes.myBooking, page: () => MyBookingView()),
+  GetPage(name: AppRoutes.bookingPrice, page: () => BarberPriceView()),
 ];

@@ -100,3 +100,91 @@ final List<Map<String, dynamic>> categoryList = [
     "image": AppImages.premiumPackage,
   },
 ];
+
+final List<Map<String, dynamic>> servicesList = [
+  {
+    "title_en": "Haircut",
+    "title_ar": "حلاقة شعر",
+    "title_fr": "Coupe de cheveux",
+    "image": "assets/icons/category/Hair-Extensions.png",
+    "price": 350,
+  },
+  {
+    "title_en": "Haircut + Beard + Styling",
+    "title_ar": "حلاقة شعر + لحية + تسريحة",
+    "title_fr": "Coupe de cheveux + barbe + coiffage",
+    "image": AppImages.premiumPackage,
+    "price": 700,
+  },
+  {
+    "title_en": "Full Haircut (Student)",
+    "title_ar": "حلاقة كاملة طالب جامعي",
+    "title_fr": "Coupe complète (étudiant)",
+    "image": "assets/images/graduated.png",
+    "price": 500,
+  },
+  {
+    "title_en": "Kids Haircut",
+    "title_ar": "حلاقة أطفال",
+    "title_fr": "Coupe pour enfants",
+    "image": AppImages.kidsHaircut,
+    "price": 300,
+  },
+];
+
+final List<Map<String, dynamic>> storeList = [
+  {"title_fr": "Cire Coiffante", "image": "assets/product/1.jpg", "price": 250},
+  {"title_fr": "Spider S4", "image": "assets/product/7.jpg", "price": 700},
+  {"title_fr": "Coupe complète", "image": "assets/product/3.jpg", "price": 450},
+  {"title_fr": "Max S2", "image": "assets/product/4.jpg", "price": 250},
+  {"title_fr": "vatika", "image": "assets/product/5.jpg", "price": 450},
+];
+
+final List<Map<String, dynamic>> barberList = [
+  {
+    "name": "POSTE 1",
+    "image": AppImages.test,
+    "open": "09:00 AM",
+    "close": "09:00 PM",
+    "address": "Downtown, Algiers",
+    "rating": "4.5",
+    "distance": "1.2",
+  },
+  {
+    "name": "POSTE 2",
+    "image": AppImages.test,
+    "open": "10:00 AM",
+    "close": "08:00 PM",
+    "address": "Bab Ezzouar, Algiers",
+    "rating": "4.7",
+    "distance": "2.0",
+  },
+  {
+    "name": "POSTE 3",
+    "image": AppImages.test,
+    "open": "08:30 AM",
+    "close": "10:00 PM",
+    "address": "Didouche Mourad, Constantine",
+    "rating": "4.6",
+    "distance": "3.5",
+  },
+  {
+    "name": "POSTE 4",
+    "image": AppImages.test,
+    "open": "09:00 AM",
+    "close": "11:00 PM",
+    "address": "Tizi Ouzou Center",
+    "rating": "4.3",
+    "distance": "4.8",
+  },
+  {
+    "name": "POSTE 5",
+    "image": AppImages.test,
+    "open": "10:00 AM",
+    "close": "07:00 PM",
+    "address": "Oran Downtown",
+    "rating": "4.8",
+    "distance": "5.0",
+  },
+];
+

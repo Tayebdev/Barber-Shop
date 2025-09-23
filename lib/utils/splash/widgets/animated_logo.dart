@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../core/constant/app_colors.dart';
 import '../../helper/function_helpers.dart';
 import 'shopping_bags_logo.dart';
 
@@ -72,8 +71,8 @@ class _AnimatedLogoState extends State<AnimatedLogo>
               );
             },
             child: Container(
-              width: 200,
-              height: 200,
+              width: 300,
+              height: 300,
               decoration: BoxDecoration(
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(70),
@@ -83,9 +82,9 @@ class _AnimatedLogoState extends State<AnimatedLogo>
                     // ignore: deprecated_member_use
                     color: dark
                         // ignore: deprecated_member_use
-                        ? AppColors.primary.withOpacity(0.15)
+                        ? Colors.transparent
                         // ignore: deprecated_member_use
-                        : AppColors.black.withOpacity(0.15),
+                        : Colors.transparent,
                     offset: const Offset(0, 10),
                   ),
                 ],

@@ -38,7 +38,7 @@ class PromoWidget extends StatelessWidget {
                         ),
                         SizedBox(height: AppSizes.spaceBtwInputFields / 4),
                         Text(
-                          "Today's Special",
+                         "اشتراك شهري",
                           style: Theme.of(context).textTheme.headlineMedium!
                               .copyWith(
                                 fontWeight: FontWeight.bold,
@@ -59,7 +59,7 @@ class PromoWidget extends StatelessWidget {
                 ),
                 SizedBox(height: AppSizes.spaceBtwItems / 2),
                 Text(
-                  "Get a discount for every service order !\nOnly valid for today!",
+                  "1800 DA اربع حلاقات في الشهر",
                   style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                     fontWeight: FontWeight.bold,
                     color: AppColors.white,

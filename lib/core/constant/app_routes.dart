@@ -7,4 +7,5 @@ class AppRoutes {
   static const String barbers='/barbers';
   static const String booking="/booking";
   static const String myBooking="/myBooking";
+  static const String bookingPrice="/bookingPrice";
 }

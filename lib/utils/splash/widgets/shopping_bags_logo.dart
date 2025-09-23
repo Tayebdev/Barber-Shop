@@ -16,7 +16,7 @@ class ShoppingBagsLogo extends StatelessWidget {
         children: [
           // ignore: avoid_unnecessary_containers
           Container(
-            child: Image.asset(dark ? AppImages.logoDark : AppImages.logo),
+            child: Image.asset(dark ? AppImages.logoDark : AppImages.logoDark),
           ),
         ],
       ),

@@ -117,6 +117,9 @@ class AppTexts {
   static const String payment = "Payment Success!";
   static const String subTitlePayment =
       'Thank you for shopping with Trendify! Your payment was successful, and your order is now being processed. We’ll notify you in the app when your package is on its way. Happy shopping!';
+  
+  
+  
   static const String haircut_en = "Haircut";
   static const String haircut_ar = "قص الشعر";
   static const String haircut_fr = "Coupe de cheveux";

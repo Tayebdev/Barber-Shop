@@ -11,8 +11,8 @@ class OnboardingDotNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom: UDeviceHelper.getBottomNavigationBarHeight() * 4,
-      left: UDeviceHelper.getScreenWidth(context) / 3,
+      bottom: UDeviceHelper.getBottomNavigationBarHeight() * 4.2,
+      left: UDeviceHelper.getScreenWidth(context) / 2.7,
       right: UDeviceHelper.getScreenWidth(context) / 3,
       child: SmoothPageIndicator(
         controller: controller.pageController,

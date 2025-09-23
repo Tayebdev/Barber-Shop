@@ -13,7 +13,7 @@ class AppBarbers extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Barbers in the shop',
+            'الحلاقون في المحل',
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           SizedBox(height: AppSizes.spaceBtwItems / 2),
@@ -21,12 +21,12 @@ class AppBarbers extends StatelessWidget {
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
-              return AppCardBarbers();
+              return AppCardBarbers(index: index,);
             },
             separatorBuilder: (context, index) {
               return SizedBox(height: AppSizes.spaceBtwItems / 2);
             },
-            itemCount: 10,
+            itemCount: 5,
           ),
         ],
       ),

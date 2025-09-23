@@ -106,18 +106,6 @@ class ProductCartVertical extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      Text(
-                        "\$100",
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          decoration: TextDecoration.lineThrough,
-                          decorationThickness: 2, // thickness of the line
-                          decorationColor: dark
-                              ? AppColors.light
-                              : AppColors.black, // color of the line
-                        ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
                       SizedBox(width: AppSizes.xl),
                       Container(
                         width: AppSizes.iconLg * 1.2,
